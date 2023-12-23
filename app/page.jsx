@@ -8,7 +8,7 @@ export default function Home() {
       <Header 
         title="Lightstation"
       />
-      <div className="flex flex-col items-center w-[700px] m-auto gap-[4rem] ">
+      <div className="flex flex-col items-center max-[700px]:w-[85%] w-[700px] m-auto gap-[4rem] ">
           {data.map((el, index) => {
               return (
                 <Card 
