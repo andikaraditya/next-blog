@@ -1,17 +1,18 @@
 import Card from "./components/Card";
 import Header from "./components/Header";
+import data from "./data/db.json";
 
 export default function Home() {
-  const posts = ["","","","","",""]
   return (
     <main>
       <Header 
         title="Lightstation"
       />
-      <div className="flex flex-col items-center w-[700px] m-auto gap-16">
-          {posts.map((el, index) => {
+      <div className="flex flex-col items-center w-[700px] m-auto gap-[5rem]">
+          {data.map((el, index) => {
               return (
                 <Card 
+                post={el}
                 key={index}
                 />
               )
