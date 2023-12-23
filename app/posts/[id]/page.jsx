@@ -33,7 +33,7 @@ function PostDetail({params}) {
         )
     }
     return (
-        <main>
+        <main className="min-h-[80vh]">
             <div className="py-10 mb-10 w-[800px] m-auto border-b-4 border-slate-800">
                 <h1 className="text-6xl text-center text-slate-800 capitalize">{post.title}</h1>
             </div>

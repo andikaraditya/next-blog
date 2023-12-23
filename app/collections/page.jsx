@@ -13,7 +13,7 @@ function renderTitle(title) {
 function CollectionPage() {
     let shown = data
     return (
-        <main className="flex flex-col items-stretch w-[700px] m-auto">
+        <main className="flex flex-col w-[700px] m-auto min-h-[80vh]">
             <Header
             title="Collections"
             />
