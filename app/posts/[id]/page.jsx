@@ -34,12 +34,12 @@ function PostDetail({params}) {
     }
     return (
         <main className="min-h-[80vh]">
-            <div className="max-[800px]:w-[85%] py-10 mb-10 w-[800px] m-auto border-b-4 border-slate-800">
-                <h1 className="max-[800px]:text-4xl text-6xl text-center text-slate-800 capitalize">{post.title}</h1>
+            <div className="max-[1100px]:w-[85%] py-5 mb-10 w-[1100px] m-auto border-b-4 border-slate-800">
+                <h1 className="max-[1100px]:text-4xl text-6xl text-center text-slate-800 capitalize">{post.title}</h1>
+                <p className="text-lg text-slate-600 text-center mt-4">{getDate(post.date)}</p>
             </div>
-            <div className="max-[800px]:w-[85%] w-[800px] m-auto">
-                <p className="text-lg text-slate-600 mb-4">Posted on {getDate(post.date)}</p>
-                <p className="max-[800px]:text-2xl text-3xl text-justify whitespace-pre-line leading-snug text-slate-800">
+            <div className="max-[1100px]:w-[85%] w-[1100px] m-auto">
+                <p className="max-[1100px]:text-2xl text-3xl text-justify whitespace-pre-line leading-snug text-slate-800">
                     {post.description}
                 </p>
             </div>
